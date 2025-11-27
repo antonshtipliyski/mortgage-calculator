@@ -1,4 +1,4 @@
-import './index.css'; // Make sure Tailwind CSS is imported
+import './index.css';
 import './App.css'
 import MortgageCalculator from './components/MortgageCalculator/MortgageCalculator'
 
