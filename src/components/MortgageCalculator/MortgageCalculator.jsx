@@ -328,9 +328,7 @@ export default function MortgageCalculator() {
   return (
     <div className="max-w-6xl mx-auto p-6">
       <div className="flex justify-between items-start gap-4 mb-6">
-        <h1 className="text-2xl font-semibold">
-          Mortgage Calculator + Prepayments
-        </h1>
+        <h1 className="text-2xl font-semibold">Mortgage Calculator</h1>
 
         <div className="flex items-center gap-3">
           <label className="flex items-center gap-2">
@@ -461,9 +459,9 @@ export default function MortgageCalculator() {
       </div>
 
       <div className="mb-6 border rounded p-4">
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex flex-col gap-2 mb-3 md:flex-row md:items-center md:justify-between">
           <div className="text-lg font-medium">Prepayments</div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-start gap-2 flex-col md:flex-row md:items-center">
             <label className="flex items-center gap-2 text-sm">
               <input
                 type="radio"
@@ -519,7 +517,7 @@ export default function MortgageCalculator() {
             />
           </label>
 
-          <div className="md:col-span-2 flex items-center gap-2">
+          <div className="md:col-span-2 flex items-center gap-2 justify-end">
             <button
               onClick={addPrepayment}
               className="px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
@@ -632,8 +630,8 @@ export default function MortgageCalculator() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between mb-3">
-        <div className="flex items-center gap-2 flex-wrap">
+      <div className="flex flex-col gap-3 mb-3 md:flex-row md:items-center md:justify-between">
+        <div className="flex items-center gap-2 flex-wrap justify-center">
           <label className="flex items-center gap-2">
             <span className="text-sm">Rows per page</span>
             <select
@@ -701,7 +699,7 @@ export default function MortgageCalculator() {
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 justify-center">
           <button
             onClick={downloadCSV}
             className="px-3 py-1 border rounded bg-gray-700 text-white hover:bg-gray-600"
